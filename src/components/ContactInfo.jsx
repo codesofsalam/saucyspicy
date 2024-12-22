@@ -1,26 +1,21 @@
-
-import { MapPin, Clock, Calendar } from 'lucide-react';
+import { MapPin, Clock, Calendar } from "lucide-react";
 
 const ContactInfo = () => {
   const openingHours = [
-    { days: 'Monday - Friday', hours: '9:00 AM - 5:00 PM' },
-    { days: 'Saturday - Sunday', hours: '10:00 AM - 3:00 PM' }
+    { days: "Monday - Friday", hours: "9:00 AM - 5:00 PM" },
+    { days: "Saturday - Sunday", hours: "10:00 AM - 3:00 PM" },
   ];
 
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg max-w-md">
-      {/* Location Section */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <MapPin className="text-orange-600" size={24} />
           <h2 className="text-2xl font-bold text-gray-900">Where to Find Us</h2>
         </div>
-        <p className="text-gray-600 text-lg ml-9">
-          Qasimabad, Hyderabad
-        </p>
+        <p className="text-gray-600 text-lg ml-9">Karachi</p>
       </div>
 
-      {/* Opening Hours Section */}
       <div>
         <div className="flex items-center gap-3 mb-4">
           <Clock className="text-orange-600" size={24} />

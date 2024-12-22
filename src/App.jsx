@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import Home from './pages/Home';
-import MenuPage from './pages/Menu';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import { useState } from "react";
+import { Link, Routes, Route } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import Home from "./pages/Home";
+import MenuPage from "./pages/Menu";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/menu', label: 'Menu' },
-    { path: '/about', label: 'About' },
-    { path: '/contact', label: 'Contact' }
+    { path: "/", label: "Home" },
+    { path: "/menu", label: "Menu" },
+    { path: "/about", label: "About" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
@@ -23,26 +23,24 @@ const App = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-xl font-bold text-orange-600 hover:text-green-700 transition-colors">
+                <span className="text-xl font-bold text-orange-600 hover:text-orange-700 transition-colors">
                   Saucy Spicy
                 </span>
               </Link>
             </div>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map(({ path, label }) => (
                 <Link
                   key={path}
                   to={path}
-                  className="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200"
+                  className="text-gray-600 hover:text-orange-600 font-medium transition-colors duration-200"
                 >
                   {label}
                 </Link>
               ))}
             </div>
 
-            {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -58,7 +56,6 @@ const App = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">

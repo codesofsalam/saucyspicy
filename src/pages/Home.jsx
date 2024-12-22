@@ -2,7 +2,6 @@ import { ChevronRight, Clock, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  // Sample menu items
   const foodItems = [
     { name: "English Breakfast", price: 12 },
     { name: "Spicy Beef", price: 15 },
@@ -17,10 +16,9 @@ const Home = () => {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
       <header
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/saucy.jpg')" }} // Add your background image here
+        style={{ backgroundImage: "url('/saucy.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/5" />
         <div className="relative z-10 text-center px-4">
@@ -34,7 +32,6 @@ const Home = () => {
         </div>
       </header>
 
-      {/* About Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
@@ -62,14 +59,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Menu Section */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">
             Our Favorites
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Food Menu */}
             <div className="space-y-8">
               <h3 className="text-2xl font-semibold text-center mb-8">Food</h3>
               <div className="space-y-6">
@@ -86,7 +81,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            {/* Drinks Menu */}
+
             <div className="space-y-8">
               <h3 className="text-2xl font-semibold text-center mb-8">
                 Drinks
@@ -109,7 +104,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 space-y-8">
@@ -117,13 +111,11 @@ const Home = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <Phone className="text-orange-600" />
-                <span className="text-gray-600">+1 234 567 890</span>
+                <span className="text-gray-600">+923300000000</span>
               </div>
               <div className="flex items-center gap-4">
                 <MapPin className="text-orange-600" />
-                <span className="text-gray-600">
-                  123 Restaurant Street, Foodville
-                </span>
+                <span className="text-gray-600">Karachi</span>
               </div>
               <div className="flex items-center gap-4">
                 <Clock className="text-orange-600" />
