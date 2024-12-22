@@ -1,4 +1,4 @@
-
+import menuBg from "../utils/images/menu.jpg"
 
 const Menu = () => {
   const menuSections = [
@@ -147,7 +147,7 @@ const Menu = () => {
                 {/* Image */}
                 <div className="flex justify-center">
                   <img
-                    src={`/api/placeholder/500/400`}
+                    src={menuBg}
                     alt={`${section.title} dishes`}
                     className="rounded-lg shadow-xl object-cover"
                   />

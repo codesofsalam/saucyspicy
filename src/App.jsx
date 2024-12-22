@@ -23,7 +23,7 @@ const App = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-xl font-bold text-green-600 hover:text-green-700 transition-colors">
+                <span className="text-xl font-bold text-orange-600 hover:text-green-700 transition-colors">
                   Saucy Spicy
                 </span>
               </Link>

@@ -1,5 +1,5 @@
-
 import { ChevronRight, Clock, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   // Sample menu items
@@ -18,14 +18,19 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <header className="relative h-screen flex items-center justify-center bg-gradient-to-r from-orange-100 to-red-50">
+      <header
+        className="relative h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/saucy.jpg')" }} // Add your background image here
+      >
         <div className="absolute inset-0 bg-black/5" />
         <div className="relative z-10 text-center px-4">
-          <h2 className="text-3xl font-light text-gray-800 mb-2">Welcome To</h2>
-          <h1 className="text-6xl font-bold text-gray-900 mb-8">Saucy Spicy</h1>
-          <button className="bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition-colors duration-300">
-            View Our Menu
-          </button>
+          <h2 className="text-3xl font-semibold text-black mb-2">Welcome To</h2>
+          <h1 className="text-6xl font-bold text-black mb-8">Saucy Spicy</h1>
+          <Link to="/menu">
+            <button className="bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition-colors duration-300">
+              View Our Menu
+            </button>
+          </Link>
         </div>
       </header>
 
@@ -33,16 +38,18 @@ const Home = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <img src="/api/placeholder/600/400" alt="Restaurant ambiance" className="rounded-lg shadow-xl" />
+            <img src="/about.jpg" alt="Restaurant ambiance" className="rounded-lg shadow-xl" />
           </div>
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">About Us</h2>
             <p className="text-gray-600 leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            At Saucy Spicy, we serve an unforgettable culinary experience with bold flavors and a cozy atmosphere. Our menu combines the finest ingredients to create dishes that are both comforting and exciting, perfect for every palate. Join us and discover why our food is as vibrant as our passion for cooking!
             </p>
             <button className="flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700 transition-colors">
-              Learn More <ChevronRight size={20} />
-            </button>
+  <Link to="/menu" className="flex items-center gap-2">
+    Learn More <ChevronRight size={20} />
+  </Link>
+</button>
           </div>
         </div>
       </section>
@@ -59,7 +66,7 @@ const Home = () => {
                 {foodItems.map((item, index) => (
                   <div key={index} className="flex justify-between items-center border-b border-gray-700 pb-4">
                     <span className="text-xl">{item.name}</span>
-                    <span className="text-xl text-green-400">${item.price}</span>
+                    <span className="text-xl text-orange-600">${item.price}</span>
                   </div>
                 ))}
               </div>
@@ -71,7 +78,7 @@ const Home = () => {
                 {drinkItems.map((item, index) => (
                   <div key={index} className="flex justify-between items-center border-b border-gray-700 pb-4">
                     <span className="text-xl">{item.name}</span>
-                    <span className="text-xl text-green-400">${item.price}</span>
+                    <span className="text-xl text-orange-600">${item.price}</span>
                   </div>
                 ))}
               </div>
@@ -101,7 +108,7 @@ const Home = () => {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <img src="/api/placeholder/600/400" alt="Restaurant exterior" className="rounded-lg shadow-xl" />
+            <img src="/contact.jpg" alt="Restaurant exterior" className="rounded-lg shadow-xl" />
           </div>
         </div>
       </section>

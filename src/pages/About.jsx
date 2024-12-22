@@ -49,7 +49,7 @@ const About = () => {
             
             <div className="grid md:grid-cols-2 gap-8 my-12">
               <img
-                src="/api/placeholder/600/400"
+                src="/about.jpg"
                 alt="Our kitchen"
                 className="rounded-xl shadow-lg object-cover h-full"
               />
