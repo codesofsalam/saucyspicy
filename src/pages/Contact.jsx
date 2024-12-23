@@ -2,8 +2,8 @@ import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
-    { icon: <Phone size={24} />, text: "+1 234 567 890" },
-    { icon: <MapPin size={24} />, text: "123 Restaurant Street, Foodville" },
+    { icon: <Phone size={24} />, text: "+923300000000" },
+    { icon: <MapPin size={24} />, text: "Karachi" },
     { icon: <Clock size={24} />, text: "Mon-Sun: 9:00 AM - 11:00 PM" },
     { icon: <Mail size={24} />, text: "contact@restaurant.com" },
   ];
