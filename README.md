@@ -1,7 +1,7 @@
 # SaucySpicy
 
 ## Description
-Saucy Spicy is a vibrant and user-friendly food ordering app designed to provide a seamless experience for discovering, customizing, and ordering delicious meals. With intuitive navigation and real-time menu updates, Saucy Spicy brings your favorite flavors to your fingertips.
+Saucy Spicy is a vibrant and user-friendly food ordering site designed to provide a seamless experience for discovering, customizing, and ordering delicious meals. With intuitive navigation and real-time menu updates, Saucy Spicy brings your favorite flavors to your fingertips.
 
 
 ## Installation
